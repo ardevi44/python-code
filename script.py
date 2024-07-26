@@ -136,37 +136,37 @@
 
 # * Love calculator mini-project
 
-name1 = input()
-name2 = input()
+# name1 = input()
+# name2 = input()
 
-# TRUE words occurs
-true_word_occurs = 0
-love_word_occurs = 0
+# # TRUE words occurs
+# true_word_occurs = 0
+# love_word_occurs = 0
 
-true_word_occurs += name1.count("t") + name2.count("t")
-true_word_occurs += name1.count("r") + name2.count("r")
-true_word_occurs += name1.count("u") + name2.count("u")
-true_word_occurs += name1.count("e") + name2.count("e")
+# true_word_occurs += name1.count("t") + name2.count("t")
+# true_word_occurs += name1.count("r") + name2.count("r")
+# true_word_occurs += name1.count("u") + name2.count("u")
+# true_word_occurs += name1.count("e") + name2.count("e")
 
-love_word_occurs += name1.count("l") + name2.count("l");
-love_word_occurs += name1.count("o") + name2.count("o");
-love_word_occurs += name1.count("v") + name2.count("v");
-love_word_occurs += name1.count("e") + name2.count("e");
+# love_word_occurs += name1.count("l") + name2.count("l");
+# love_word_occurs += name1.count("o") + name2.count("o");
+# love_word_occurs += name1.count("v") + name2.count("v");
+# love_word_occurs += name1.count("e") + name2.count("e");
 
 # print("results: ", "For the true word: ", true_word_occurs, "For the love word: ", love_word_occurs)
 
-love_score = int(f"{true_word_occurs}{love_word_occurs}")
+# love_score = int(f"{true_word_occurs}{love_word_occurs}")
 
 # print(love_score, type(love_score))
 
-print("The Love Calculator is calculating your score...")
+# print("The Love Calculator is calculating your score...")
 
-if love_score < 10 or love_score > 90:
-  print(f"Your score is {love_score}, you go together like coke and mint.")
-elif love_score >= 40 and love_score <= 50:
-  print(f"Your score is {love_score}, you are alright together.");
-else:
-  print(f"Your score is {love_score}.")
+# if love_score < 10 or love_score > 90:
+#   print(f"Your score is {love_score}, you go together like coke and mint.")
+# elif love_score >= 40 and love_score <= 50:
+#   print(f"Your score is {love_score}, you are alright together.");
+# else:
+#   print(f"Your score is {love_score}.")
 
 
 

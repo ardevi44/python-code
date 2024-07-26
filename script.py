@@ -108,30 +108,65 @@
 
 # print("Thank you for choosing Python Pizza Deliveries!")
 
-size = input("\n\nWhat size pizza do you want? S, M, or L: ").lower()
-total_bill = 0
+# size = input("\n\nWhat size pizza do you want? S, M, or L: ").lower()
+# total_bill = 0
 
-if size == "s":
-  total_bill = 15
-elif size == "m":
-  total_bill = 20
-elif size == "l":
-  total_bill = 25
+# if size == "s":
+#   total_bill = 15
+# elif size == "m":
+#   total_bill = 20
+# elif size == "l":
+#   total_bill = 25
 
-add_pepperoni = input("\n\nDo you want pepperoni? Y or N? ").lower()
+# add_pepperoni = input("\n\nDo you want pepperoni? Y or N? ").lower()
 
-if add_pepperoni == "Y" or add_pepperoni == "y":
-  if size == "s":
-    total_bill += 2
-  if size == "m" or size == "l":
-    total_bill += 3
+# if add_pepperoni == "Y" or add_pepperoni == "y":
+#   if size == "s":
+#     total_bill += 2
+#   if size == "m" or size == "l":
+#     total_bill += 3
 
-extra_cheese = input("\n\nDo you want extra cheese? Y or N? ").lower()
+# extra_cheese = input("\n\nDo you want extra cheese? Y or N? ").lower()
 
-if extra_cheese == "y":
-  total_bill += 1
+# if extra_cheese == "y":
+#   total_bill += 1
 
-print(f"\n\nYour final bill is: $" + "{:.2f}".format(total_bill) + ".")
+# print(f"\n\nYour final bill is: $" + "{:.2f}".format(total_bill) + ".")
+
+
+# * Love calculator mini-project
+
+name1 = input()
+name2 = input()
+
+# TRUE words occurs
+true_word_occurs = 0
+love_word_occurs = 0
+
+true_word_occurs += name1.count("t") + name2.count("t")
+true_word_occurs += name1.count("r") + name2.count("r")
+true_word_occurs += name1.count("u") + name2.count("u")
+true_word_occurs += name1.count("e") + name2.count("e")
+
+love_word_occurs += name1.count("l") + name2.count("l");
+love_word_occurs += name1.count("o") + name2.count("o");
+love_word_occurs += name1.count("v") + name2.count("v");
+love_word_occurs += name1.count("e") + name2.count("e");
+
+# print("results: ", "For the true word: ", true_word_occurs, "For the love word: ", love_word_occurs)
+
+love_score = int(f"{true_word_occurs}{love_word_occurs}")
+
+# print(love_score, type(love_score))
+
+print("The Love Calculator is calculating your score...")
+
+if love_score < 10 or love_score > 90:
+  print(f"Your score is {love_score}, you go together like coke and mint.")
+elif love_score >= 40 and love_score <= 50:
+  print(f"Your score is {love_score}, you are alright together.");
+else:
+  print(f"Your score is {love_score}.")
 
 
 

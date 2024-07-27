@@ -32,8 +32,39 @@ iterator = iter(alphabet)
 # print(next(iterator))
 # print(next(iterator))
 
-try:
-  while True:
-    print(next(iterator))
-except StopIteration:
-  print("The iteration is done")
+# try:
+#   while True:
+#     print(next(iterator))
+# except StopIteration:
+#   print("The iteration is done")
+
+
+# Create an odd numbers iterator
+
+# limit = 10 + 1
+# # The 2 parameter is how many jumps we'll take inside the range
+# odd_iter = iter(range(1, limit, 2))
+
+# for number in odd_iter:
+#   print(number)
+
+# # * Iterator Generators
+
+# def new_generator():
+#   yield 1
+#   yield 2
+#   yield 3
+
+# for value in new_generator():
+#   print(value)
+
+# # * Fibonacci series with generators
+
+# def fibonacci(limit):
+#   a, b = 0, 1
+#   while a <= limit:
+#     yield a
+#     a, b = b, a+b
+
+# for number in fibonacci(10):
+#   print(number)

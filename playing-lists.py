@@ -13,10 +13,10 @@ print("Last element of mix list: ", mix[-1])
 print(mix[0:2])
 print(mix[2:-2])
 new_length = mix.append("23")
-print(new_length)
+print(new_length) # None
 print(mix)
 
-# Creating a list from a list comprehension
+# * List comprehension
 numbers = [1,2,3,4,5]
 squares_of_numbers = [x**2 for x in numbers]
 

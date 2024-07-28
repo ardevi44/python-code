@@ -40,6 +40,14 @@
 # except StopIteration:
 #   print("The iteration is done")
 
+# * String iterator
+# text = "Hello world"
+
+# iter_text = iter(text)
+
+# for character in iter_text:
+#   print(character)
+
 
 # * Create an odd numbers iterator
 
